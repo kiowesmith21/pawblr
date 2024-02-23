@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
 import Navbar from './components/Navbar';
+import PostPage from './pages/PostPage';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <div className='pages'>
             <Routes>
                 <Route path="/" element={<Home />} />
+                <Route path="/post" element={<PostPage />} />
             </Routes> 
         </div> 
       </BrowserRouter>

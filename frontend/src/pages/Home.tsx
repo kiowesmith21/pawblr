@@ -1,6 +1,5 @@
 import { Key, useEffect, useState } from "react"
 import PostCard from "../components/PostCard"
-// import PostCard from "../components/PostCard"
 
 const Home = () => {
 
@@ -29,7 +28,7 @@ const Home = () => {
 
   return (
     <div className="home">
-        <div className="posts-container">
+        <div className="posts-container flex flex-col space-y-40 mt-20 items-center justify-center">
             {posts && posts.map(post => (
                 <PostCard key={post._id} title={post.title} caption={post.caption} image={post.image}  /> 
             ))} 
