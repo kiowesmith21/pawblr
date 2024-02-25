@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
 import Navbar from './components/Navbar';
 import PostPage from './pages/PostPage';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
                 <Route path="/post" element={<PostPage />} />
             </Routes> 
         </div> 
+        <Footer />
       </BrowserRouter>
     </div>
   );
